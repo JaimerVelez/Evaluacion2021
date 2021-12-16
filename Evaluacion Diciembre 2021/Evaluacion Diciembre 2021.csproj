@@ -68,11 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bodega.aspx" />
+    <Content Include="git.aspx" />
     <Content Include="Loby.aspx" />
     <None Include="Resources\estilos.css" />
     <None Include="Resources\paisaje-cultura-sostenibilidad.jpg" />
     <None Include="Resources\Capturaa.png" />
-    <None Include="Resources\montañasl.jpg" />
     <Content Include="Web.config" />
     <None Include="Resources\personascompras.webp" />
   </ItemGroup>
@@ -85,6 +85,13 @@
       <DependentUpon>bodega.aspx</DependentUpon>
     </Compile>
     <Compile Include="Conexion.cs" />
+    <Compile Include="git.aspx.cs">
+      <DependentUpon>git.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="git.aspx.designer.cs">
+      <DependentUpon>git.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Loby.aspx.cs">
       <DependentUpon>Loby.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

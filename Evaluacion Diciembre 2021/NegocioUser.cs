@@ -44,15 +44,15 @@ namespace Evaluacion_Diciembre_2021
              return user;
      
         }
-        public int registro_producto(string Producto, int Cantidad, float Precio, DateTime FechaVencimiento)
+        public int registro_producto(string Producto, int Cantidad, string Precio, DateTime Fecha)
         {
             int filas = 0;
             SqlConnection con = new SqlConnection(Conexion.Cadena());
             try
             {
                 con.Open();
-                string query = @"INSERT INTO SuministrosEvaluación(Producto,Cantidad,Precio,FechaVencimiento )
-					                   values('" + Producto + "','" + Cantidad + "','" + Precio + "','" + FechaVencimiento + "')";
+                string query = @"INSERT INTO SuministrosEvaluación(Producto,Cantidad,Precio,Fecha )
+					                   values('" + Producto + "','" + Cantidad + "','" + Precio + "','" + Fecha + "')";
                 SqlCommand cmd = new SqlCommand(query, con);
                 filas = cmd.ExecuteNonQuery();
 

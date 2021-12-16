@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="ProgramaWeb.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Loby.aspx.cs" Inherits="Evaluacion_Diciembre_2021.Loby" %>
 <script runat="server">
 
 
@@ -19,37 +19,31 @@
   
 <div class="container">
   <div class="row">
-    <div class="col-sm-4">
+    <div class>
       <h3>Producto</h3>
-      <p>Ingrese el nombre del producto</p>
-          
-      <p>
-          <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+          <asp:TextBox ID="TextBox1" runat="server" class="form-control" placeholder="Ingrese su Producto" Width="452px"></asp:TextBox>
         </p>
     </div>
-    <div class="col-sm-4">
+    <div class>
       <h3>Cantidad</h3>
-      <p>Ingrese la cantidad de ese producto</p>
       <p>
-          <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+          <asp:TextBox ID="TextBox2" runat="server" class="form-control" placeholder="Ingrese su cantidad" Width="452px"></asp:TextBox>
       </p>
     </div>
-    <div class="col-sm-4">
-      <h3>Precio</h3>        
-      <p>Ingrese el valor unitario</p>
+    <div class>
+      <h3>Precio</h3>
+        <div class="form-group text-center">
+          <asp:TextBox ID="TextBox3" runat="server" class="form-control" placeholder="Ingrese el valor unitario" Width="452px"></asp:TextBox></div>
+
+        </p>
+    </div>
+    <div class>
+      <h3>Fecha de vencimiento</h3>
       <p>
-          
-          <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+          <asp:TextBox ID="TextBox4" runat="server" class="form-control" placeholder="Fecha de vencimiento" Width="452px"></asp:TextBox>
       </p>
-         </div>
-    <div class="col-sm-4">
-      </div>
-    <div class="col-sm-4">
-      <h3>Fecha</h3>
-      <p>Ingrese fecha</p>
-      <p>
-          <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-          <asp:Button ID="Button1" runat="server" class="btn btn-success" OnClick="Button3_Click" Text="Subir" />
+          <div class="form-group text-center">
+          <asp:Button ID="Button1" runat="server" class="btn btn-success"  Text="Registar productos" OnClick="click_two" />
           </div>
   </div>
 </div>
